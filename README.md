@@ -149,7 +149,17 @@ Setelah menjawab semua soal maka didapatkan flag untuk menjawab soal 5 seperti d
 ### Penyelesaian soal 6
 
 ## Soal 7
+Berapa jumlah packet yang menuju IP 184.87.193.88?<br />
+
 ### Penyelesaian soal 7
+Langkah 1 : Copy nc 10.21.78.111 6565 pada terminal, setelah itu akan muncul soal yang ditanyakan.<br />
+
+Langkah 2 : Download file soal6-9.pcap, kemudian buka file tersebut di Wireshark. Kemudian lakukan filtering dengan `ip.dst == 184.87.193.88`. Sesuai dengan gambar dibawah ini maka didapatkan ada sebanyak `6 paket` yang menuju IP 184.87.193.88.<br />
+<img width="953" alt="7" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/0001377a-a9f3-4676-91e7-252f44551403"><br />
+
+Kemudian akan muncul flag untuk menjawab soal 7 seperti dibawah ini : <br />
+<img width="371" alt="no 7" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/d715ebf2-4855-4fa6-8d53-41309e3cf7d1"><br />
+
 
 ## Soal 8
 ### Penyelesaian soal 8
