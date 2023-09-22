@@ -29,6 +29,8 @@
 	- [Penyelesaian soal 9](#penyelesaian-soal-9)
 - [Soal 10](#soal-10)
 	- [Penyelesaian soal 10](#penyelesaian-soal-10)
+- [Kendala](#Kendala)
+   
 
 ## Soal 1
 
@@ -251,3 +253,8 @@ Kemudian kredensial yang benar adalah `dhafin:kesayangannyak0k0` seperti gambar 
 
 Kemudian akan muncul flag untuk menjawab soal 10.<br />
 <img width="368" alt="flag 10" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/30c11665-4a2c-41bb-9287-7d7675c86b0c"><br />
+
+
+## Kendala
+1. Kami memiliki kendala pada nomor 6. Karena kami membutuhkan hint yang lebih untuk memecahkan masalah tersebut. Akan tetapi untuk mengtahui hintnya kita harus membelinya dengan point. Maka dari itu kami memilih tidak mengerjakannya terlebih dahulu
+2. Pada waktu pengerjaan soal 5, ada sedikit kesulitan untuk mencari IP yang merupakan IP Public.
