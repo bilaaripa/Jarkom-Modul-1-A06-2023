@@ -146,7 +146,58 @@ Setelah menjawab semua soal maka didapatkan flag untuk menjawab soal 5 seperti d
 
 
 ## Soal 6
+Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggemar film detektif. sebagai teman yang baik, Ia selalu mengajak slamet untuk bermain valoranT bersama. suatu malam, terjadi sebuah hal yang tak terdUga. ketika udin mereka membuka game tersebut, laptop udin menunjukkan sebuah field text dan Sebuah kode Invalid bertuliskan "server SOURCE ADDRESS 7812 is invalid". ketika ditelusuri di google, hasil pencarian hanya menampilkan a1 e5 u21. jiwa detektif slamet pun bergejolak. bantulah udin dan slamet untuk menemukan solusi kode error tersebut.
+
 ### Penyelesaian soal 6
+Langkah 1 : Copy `nc 10.21.78.111 13579` pada terminal, kemudian akan menampilkan soal yang diminta. Sebelumnya kita perlu melihat hint yang telah diberikan:
+![Screenshot (2724)](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/c2e92659-e9e3-4a08-9f3d-f68dc5da8ba3)
+
+Langkah 2 : Kemudian download juga `soal2.pcapng`, lalu buka di wireshark 
+
+Langkah 3 : Mencari packet`7812` lalu didapatakan Source Address `104.18.14.101`
+![Screenshot (2727)](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/9ddea719-36d4-45d6-8fd8-6660fa96ee29)
+
+Langkah 4 : Mari kita melihat hint yang diberikan pada soal
+- Clue 1: Sepertinya ada yang salah dengan penulisan tersebut secara KBBI. Ada sesuatu yang Besar di depan mata.
+- Jenis cipher merupakan substitusi a1z26 Cipher
+- Rentang Huruf yang digunakan Huruf A-R, 1-18 dengan Jawaban 6 Huruf.
+- SOURCE ADDRESS ADALAH KUNCI SEMUANYA.
+
+Langkah 5
+- Hint 1 kita asumsikan bahwa solusi error yang diminta menggunakan huruf kapital
+- Hint 2 kita asumsikan jika angka-angka yang kita dapat nantinya akan kita conversikan kedalam sebuah huruf
+- Hint 3 kita mencoba membandingan dan mengurutkan huruf dan angka sebagai berikut
+-  - A = 1
+-  - B = 2
+-  - C = 3
+-  - D = 4
+-  - E = 5
+-  - F = 6
+-  - G = 7
+-  - H = 8
+-  - I = 9
+-  - J = 10
+-  - K = 11
+-  - L = 12
+-  - M = 13
+-  - N = 14
+-  - O = 15
+-  - P = 16
+-  - Q = 17
+-  - R = 18
+- Hint 4 kita asumsikan dengan pencocokan hint3 dengan source address sebelumnya `104.18.14.101`. 
+- Caranya adalah dengan mengelompokkan source address (angka angka) tersebut sesuai dengan Hint 3 yaitu maksimal pengelompokannya pada angka 18. Maka didapatkan `10. 4. 18. 14. 10`. Mengapa demikian?, Dimulai dari angka dari awal
+- - `104.18.14.101` --> angka 1 terdapat pada rentang 1-18. selanjutnya angka 0 tidak, maka akan kita kelompokkan angka tersebut menjadi 10. `10.`
+- - angka 4 dan 1 terdapat pada rentang 1-18. namun jika kita kelompokkan hal tersebut tidak memenuhi rentang 1-18. maka angka 4 akan berdidi sendiri. `10.4`
+- - selanjutnya angka 1 dan 8 terdapat pada rentang 1-18. Angka ini dapat kita kelompokkan karena masih terdapat pada rentang 1-18, maka mennjadi 18. `10.4.18`
+- - selanjutnya angka 1 dan 4 terdapat pada rentang 1-18. Angka ini dapat kita kelompokkan karena masih terdapat pada rentang 1-18, maka menjadi 18. `10.4.18.14`
+- - selanjutnya angka 1 terdapat pada rentang 1-18. Selanjutnya angka 0 tidak, maka akan kita kelompokkan angka tersebut menjadi 10. `10.4.18.14.10`
+- - selanjutnya angka 1 terdapat pada rentang 1-18. Karena angka 1 sisa maka langsing kita tambahkan saja. `10.4.18.14.10.1`
+- Nah kita telah menemukan sebuah petunjuk `10.4.18.14.10.1`. Selanjutnya kita konversikan angka tersebut menjadi huruf kapital pada rentang 1-18 tersebut.
+- Maka didapatkan **"JDRNJA"**. Jumlah hurufnya telah memenuhi yakni 6.
+
+Hasil : Maka didapatkan kode solusi error yaitu **"JDRNJA"**
+![Screenshot 2023-09-22 105313](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/3ec7ed78-ce47-4551-837c-62c3d48b326d)
 
 ## Soal 7
 Berapa jumlah packet yang menuju IP 184.87.193.88?<br />
