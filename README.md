@@ -154,7 +154,7 @@ Seorang anak bernama Udin Berteman dengan SlameT yang merupakan seorang penggema
 Langkah 1 : Copy `nc 10.21.78.111 13579` pada terminal, kemudian akan menampilkan soal yang diminta. Sebelumnya kita perlu melihat hint yang telah diberikan:
 ![Screenshot (2724)](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/c2e92659-e9e3-4a08-9f3d-f68dc5da8ba3)
 
-Langkah 2 : Kemudian download juga `soal2.pcapng`, lalu buka di wireshark 
+Langkah 2 : Kemudian download juga `soal6-9.pcap`, lalu buka di wireshark 
 
 Langkah 3 : Mencari packet`7812` lalu didapatakan Source Address `104.18.14.101`
 ![Screenshot (2727)](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/9ddea719-36d4-45d6-8fd8-6660fa96ee29)
