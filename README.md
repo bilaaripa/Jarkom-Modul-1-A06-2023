@@ -213,7 +213,16 @@ Kemudian akan muncul flag untuk menjawab soal 7 seperti dibawah ini : <br />
 
 
 ## Soal 8
+Berikan kueri filter sehingga wireshark hanya mengambil semua protokol paket yang menuju port 80! (Jika terdapat lebih dari 1 port, maka urutkan sesuai dengan abjad)
+
 ### Penyelesaian soal 8
+Langkah 1 : Copy `nc 10.21.78.111 7171` pada terminal, setelah itu akan muncul soal yang ditanyakan. Lalu akan muncul tampilan seperti dibawah ini.
+
+Langkah 2 : Download file soal6-9.pcap, kemudian buka file tersebut di Wireshark. Kemudian lakukan filtering dengan `tcp.dstport == 80 || udp.dstport == 80` Pernyataan ini digunakan untuk mengidentifikasi paket-paket jaringan yang memiliki port tujuan (destination port) 80 dalam protokol TCP atau UDP. Port 80 adalah port yang umumnya digunakan untuk protokol HTTP, sehingga aturan ini digunakan untuk menangkap lalu lintas jaringan yang terkait dengan komunikasi web, seperti permintaan dan respons halaman web.
+![Screenshot 2023-09-18 213514](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/9a93bff1-3688-4119-bf76-584cfdab8987)
+
+Langkah 3 : Kemudian input jawaban pada terminal dan akan muncul flag untuk menjawab pertanyaan, seperti dibawah ini.
+![Screenshot 2023-09-18 194152](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/3b36ac92-ba2f-4dca-b162-3925b003f49f)
 
 ## Soal 9
 ### Penyelesaian soal 9
