@@ -227,12 +227,12 @@ Langkah 3 : Kemudian input jawaban pada terminal dan akan muncul flag untuk menj
 ![Screenshot 2023-09-18 194152](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/3b36ac92-ba2f-4dca-b162-3925b003f49f)
 
 ## Soal 9
-Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat 10.51.40.1 tetapi tidak menuju ke alamat 10.39.55.34!
+Berikan kueri filter sehingga wireshark hanya mengambil paket yang berasal dari alamat `10.51.40.1` tetapi tidak menuju ke alamat `10.39.55.34`!
 
 ### Penyelesaian soal 9
-Langkah 1 : Copy nc 10.21.78.111 7272 pada terminal, setelah itu akan muncul soal yang ditanyakan. Lalu akan muncul tampilan seperti dibawah ini.
+Langkah 1 : Copy `nc 10.21.78.111 7272` pada terminal, setelah itu akan muncul soal yang ditanyakan. Lalu akan muncul tampilan seperti dibawah ini.
 
-Langkah 2 : Download file soal6-9.pcap, kemudian buka file tersebut di Wireshark. Kemudian lakukan filtering dengan ip.src == 10.51.40.1 && ip.dst != 10.39.55.34. Ini  adalah aturan filter dalam analisis jaringan yang digunakan untuk mengidentifikasi paket-paket jaringan dengan alamat sumber (source) 10.51.40.1 dan alamat tujuan (destination) bukan 10.39.55.34. Aturan ini digunakan untuk menangkap lalu lintas yang berasal dari alamat IP tertentu (10.51.40.1) yang tidak ditujukan ke alamat IP lainnya (10.39.55.34) dalam analisis jaringan.
+Langkah 2 : Download file soal6-9.pcap, kemudian buka file tersebut di Wireshark. Kemudian lakukan filtering dengan `ip.src == 10.51.40.1 && ip.dst != 10.39.55.34`. Ini  adalah aturan filter dalam analisis jaringan yang digunakan untuk mengidentifikasi paket-paket jaringan dengan alamat sumber (source) `10.51.40.1` dan alamat tujuan (destination) bukan `10.39.55.34`. Aturan ini digunakan untuk menangkap lalu lintas yang berasal dari alamat IP tertentu (10.51.40.1) yang tidak ditujukan ke alamat IP lainnya (10.39.55.34) dalam analisis jaringan.
 ![Screenshot 2023-09-18 214243](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/7a7cbf1e-e22a-4e33-8e5c-b1697e278254)
 
 Langkah 3 : Kemudian input jawaban pada terminal dan akan muncul flag untuk menjawab pertanyaan, seperti dibawah ini.
