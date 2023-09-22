@@ -219,4 +219,17 @@ Kemudian akan muncul flag untuk menjawab soal 7 seperti dibawah ini : <br />
 ### Penyelesaian soal 9
 
 ## Soal 10
+Sebutkan kredensial yang benar ketika user mencoba login menggunakan Telnet. <br />
 ### Penyelesaian soal 10
+Langkah 1 : Copy nc 10.21.78.111 7373 pada terminal, setelah itu akan muncul soal yang ditanyakan.<br />
+Langkah 2 : Download file soal10.pcap, kemudian buka file tersebut di Wireshark. Kemudian lakukan filtering dengan telnet seperti dibawah ini.<br />
+<img width="960" alt="10" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/0cf14def-44e2-4fd0-bb7f-7dfd28a70c66"><br />
+
+Langkah 3 : Setelah itu untuk melihat kredensial yang benar klik kanan salah satu file lalu Follow dan pilih TCP Stream. <br />
+<img width="539" alt="telnet 2" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/34c775d3-6075-453a-98e1-aeb0485ec364"><br />
+Kemudian kredensial yang benar adalah `dhafin:kesayangannyak0k0` seperti gambar dibawah ini : <br />
+![no 10](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/0d2a1a59-96ce-42df-88d0-449d848c2647)<br />
+
+
+Kemudian akan muncul flag untuk menjawab soal 10.<br />
+<img width="368" alt="flag 10" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/30c11665-4a2c-41bb-9287-7d7675c86b0c"><br />
