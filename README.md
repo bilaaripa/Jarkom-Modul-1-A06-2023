@@ -137,6 +137,9 @@ Untuk menjawab soal ini dapat langsung membuka file `soal5.pcap` dan bisa langsu
 Untuk Service SMTP Port yang digunakan adalah `Port 25`.<br />
 
 - c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?<br />
+Pada paket yang diberikan terdapat IP Src dan Dst. Dari kedua IP diatas yang merupakan IP Public adalah `74.53.140.153`. Karena untuk IP Private ada range tertentu seperti pada gambar dibawah ini : <br />
+<img width="804" alt="ip pub" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/9d6d3897-f62c-4eba-8576-870df08371e0"><br />
+<img width="538" alt="ip priv" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/1ed3b496-5584-456b-9956-0300b60da0a9"><br />
 
 Setelah menjawab semua soal maka didapatkan flag untuk menjawab soal 5 seperti dibawah ini : <br />
 <img width="371" alt="no 5" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/e521cdbf-51bf-4c95-a312-1fa9dc564e4e"><br />
