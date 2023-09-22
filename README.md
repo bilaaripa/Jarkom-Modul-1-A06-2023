@@ -92,14 +92,55 @@ Langkah 2 : Download file soal3.pcap, kemudian buka file tersebut di Wireshark. 
 Langkah 3 : Kemudian masuk ke statistic lalu ke endpoint untuk melakukan cek jumlah packet yang tercapture sehingga dapat diketahui terdapat 21 packet.<br />
 <img width="951" alt="3 endpoints" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/7024f3e7-af36-401a-aef3-18c9c06cfc2e">
 
-Langkah 4 : Setelah dicek dan diketahui bahwa ada sebanyak 21 packet yang tercapture, lalu input jawaban ke terminal. Setelah jawaban diinput dan benar maka akan muncul soal yang kedua yaitu protokol layer apa yang digunakan. Jawabannya telah ada di screenshoot diatas yakni menggunakan UDP. Setelah menginputkan jawaban kedua maka akan muncul flag untuk menjawab soal tersebut.<br />
+Langkah 4 : Setelah dicek dan diketahui bahwa ada sebanyak 21 packet yang tercapture, lalu input jawaban ke terminal. Setelah jawaban diinput dan benar maka akan muncul soal yang kedua yaitu protokol layer apa yang digunakan. Jawabannya telah ada di screenshoot diatas yakni menggunakan `UDP`. Setelah menginputkan jawaban kedua maka akan muncul flag untuk menjawab soal tersebut.<br />
 <img width="624" alt="3" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/7b419847-7e74-478d-91e3-b2ffa5a1b8ca">
 
 ## Soal 4
+Berapa nilai checksum yang didapat dari header pada paket nomor 130?
 ### Penyelesaian soal 4
+Langkah 1 : Copy `nc 10.21.78.111 13591 pada terminal`. Lalu menjawab pertanyaan yang tertera dengan mendownload soal4.pcapng dan membukanya di wireshark<br />
+
+Langkah 2 : Kemudian cari packet dengan nomor 130 dan mencari checksum pada bagian User Datagram Protocol.<br />
+<img width="954" alt="line 130" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/3101c65a-fd8d-42df-b441-18fe1bf93d4f">
+<br />
+<img width="469" alt="datagram protocol" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/8a875961-2d5a-4fe1-848f-44dcc2cef4e2">
+
+Langkah 3 : Kemudian masukkan nilai Checkcum yaitu `0x18e5` untuk mendapatkan flag soal tersebut.<br />
+<img width="370" alt="no 4 flag" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/2d966980-a675-45fa-9087-136e9dc7a864">
+
 
 ## Soal 5
+Elshe menemukan suatu file packet capture yang menarik. Bantulah Elshe untuk menganalisis file packet capture tersebut.<br />
+a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?<br />
+b. Port berapakah pada server yang digunakan untuk service SMTP?<br />
+c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?<br />
+
 ### Penyelesaian soal 5
+Pada soal no 5 belum terdapat netcat, netcat tersebut berada didalam file zip yang tertera pada soal. Maka, kita harus mencari netcat terlebih dahulu.<br />
+<img width="437" alt="ziplock" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/493ff780-a277-4d95-9957-9c64351328a0">
+<br />
+
+Karena file zip tersebut masih terkunci dengan password, jadi kita juga harus mencari password supaya dapat unlock file zip tersebut dan mendapatkan netcat. Untuk mendapatkan password file zip tersebut, pertama yang harus dilakukan adalah mencari paket dengan protocol smtp pada file `soal5.pcap`<br />
+<img width="957" alt="smtp" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/1ae980a5-31d4-4806-b88e-c756d606db08"><br />
+
+Kemudian kita dapat memilih salah satu paket dan membuka TCP streamnya, setelah itu akan muncul tampilan password seperti dibawah ini : <br />
+<img width="642" alt="pw" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/29d8f32b-07c2-479a-8810-53ecef70d960"><br />
+
+Lalu password yang telah didapatkan di-decode dan mendapatkan hasil `5implePas5word`. Password tersebut diinputkan ke dalam file zip yang masih terkunci tadi dan didapatkan nc untuk dipakai mengerjakan soal 5.<br />
+<img width="442" alt="nc 5" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/f501ce30-1062-4d7b-bc7d-f544e0e62489"><br />
+
+- a. Berapa banyak packet yang berhasil di capture dari file pcap tersebut?<br />
+Untuk menjawab soal ini dapat langsung membuka file `soal5.pcap` dan bisa langsung terlihat bahwa ada sebanyak 60 paket yang tercapture.<br />
+<img width="959" alt="60" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/a11dfcb0-086d-4c28-97a2-5e1a28cf0e10"><br />
+
+- b. Port berapakah pada server yang digunakan untuk service SMTP?<br />
+Untuk Service SMTP Port yang digunakan adalah `Port 25`.<br />
+
+- c. Dari semua alamat IP yang tercapture, IP berapakah yang merupakan public IP?<br />
+
+Setelah menjawab semua soal maka didapatkan flag untuk menjawab soal 5 seperti dibawah ini : <br />
+<img width="371" alt="no 5" src="https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/91377793/e521cdbf-51bf-4c95-a312-1fa9dc564e4e"><br />
+
 
 ## Soal 6
 ### Penyelesaian soal 6
