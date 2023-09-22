@@ -31,6 +31,13 @@
 	- [Penyelesaian soal 10](#penyelesaian-soal-10)
 
 ## Soal 1
+
+User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya adalah mengunggah suatu file.
+- Berapakah sequence number (raw) pada packet yang menunjukkan aktivitas tersebut? 
+- Berapakah acknowledge number (raw) pada packet yang menunjukkan aktivitas tersebut? 
+- Berapakah sequence number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+- Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
+
 ### Penyelesaian soal 1
 Langkah 1 : Copy `nc 10.21.78.111` 12345 pada terminal, kemudian akan menampilkan soal yang diminta
 
