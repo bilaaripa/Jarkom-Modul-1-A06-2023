@@ -41,7 +41,7 @@ User melakukan berbagai aktivitas dengan menggunakan protokol FTP. Salah satunya
 - Berapakah acknowledge number (raw) pada packet yang menunjukkan response dari aktivitas tersebut?
 
 ### Penyelesaian soal 1
-Langkah 1 : Copy `nc 10.21.78.111` 12345 pada terminal, kemudian akan menampilkan soal yang diminta
+Langkah 1 : Copy `nc 10.21.78.111 12345` pada terminal, kemudian akan menampilkan soal yang diminta
 
 Langkah 2 : Kemudian download juga `soal1.pcapng`, lalu buka pada wireshark
 
