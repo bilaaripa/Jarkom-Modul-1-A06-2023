@@ -32,6 +32,27 @@
 
 ## Soal 1
 ### Penyelesaian soal 1
+Langkah 1 : Copy `nc 10.21.78.111` 12345 pada terminal, kemudian akan menampilkan soal yang diminta
+
+Langkah 2 : Kemudian download juga soal1.pcapng, lalu buka pada wireshark
+
+Langkah 3 : Melakuakan query pada wiresharknya dengan mengunakan command `ftp.request.command == "STOR"`. FTP "File Transfer Protocol." Ini adalah protokol yang digunakan untuk mentransfer file antara dua komputer melalui jaringan, seperti internet. `“STOR”` adalah perintah yang digunakan dalam FTP untuk mengirimkan file dari klien (pengirim) ke server (penerima).
+
+Untuk Request terdapat pada packet 147
+![Screenshot 2023-09-18 212314](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/9f462104-f4b3-4af1-8a41-19fd83c75f6b)
+
+Untuk Response terdapat pada packet 149
+![Screenshot (2726)](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/ab6798c1-a8fc-4d81-8f91-474c3eb619f3)
+
+Langkah 4 : Pilih pada transmission control protocol, maka akan terlihat informasi sequence number (raw) dan acknowledge number (raw) pada layar.
+
+Hasil : Hasil lalu dapat diketahui 
+- 1a --> 258040667
+- 1b --> 1044861039
+- 1c --> 1044861039
+- 1d --> 258040696
+
+![Screenshot 2023-09-18 213014](https://github.com/bilaaripa/Jarkom-Modul-1-A06-2023/assets/114417418/2c7a47ed-148c-4afe-803e-08a2c13d17ac)
 
 ## Soal 2
 ### Penyelesaian soal 2
