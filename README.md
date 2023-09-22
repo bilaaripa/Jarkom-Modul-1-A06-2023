@@ -186,7 +186,7 @@ Langkah 5
 -  - Q = 17
 -  - R = 18
 - Hint 4 kita asumsikan dengan pencocokan hint3 dengan source address sebelumnya `104.18.14.101`. 
-- Caranya adalah dengan mengelompokkan source address (angka angka) tersebut sesuai dengan Hint 3 yaitu maksimal pengelompokannya pada angka 18. Maka didapatkan `10. 4. 18. 14. 10`. Mengapa demikian?, Dimulai dari angka dari awal
+- Caranya adalah dengan mengelompokkan source address (angka angka) tersebut sesuai dengan Hint 3 yaitu maksimal pengelompokannya pada angka 18. Maka didapatkan `10. 4. 18. 14. 10. 1`. Mengapa demikian?, Dimulai dari angka dari awal
 - - `104.18.14.101` --> angka 1 terdapat pada rentang 1-18. selanjutnya angka 0 tidak, maka akan kita kelompokkan angka tersebut menjadi 10. `10.`
 - - angka 4 dan 1 terdapat pada rentang 1-18. namun jika kita kelompokkan hal tersebut tidak memenuhi rentang 1-18. maka angka 4 akan berdidi sendiri. `10.4`
 - - selanjutnya angka 1 dan 8 terdapat pada rentang 1-18. Angka ini dapat kita kelompokkan karena masih terdapat pada rentang 1-18, maka mennjadi 18. `10.4.18`
